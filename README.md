@@ -1,1 +1,1 @@
-# QuakeSingleplayerMap
+# Inferno Labs
