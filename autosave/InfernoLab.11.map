@@ -6136,12 +6136,14 @@
 "classname" "monster_enforcer"
 "origin" "864 528 296"
 "angle" "255"
+"targetname" "demon"
 }
 // entity 36
 {
 "classname" "monster_enforcer"
 "origin" "480 528 296"
 "angle" "255"
+"targetname" "demon"
 }
 // entity 37
 {
@@ -6373,18 +6375,11 @@
 // entity 67
 {
 "classname" "monster_dog"
-"origin" "1136 528 40"
+"origin" "752 544 40"
 "angle" "195"
 "targetname" "dog"
 }
 // entity 68
-{
-"classname" "monster_dog"
-"origin" "976 544 40"
-"angle" "165"
-"targetname" "dog"
-}
-// entity 69
 {
 "classname" "path_corner"
 "origin" "1080 552 24"
@@ -6392,7 +6387,7 @@
 "targetname" "path1"
 "target" "path2"
 }
-// entity 70
+// entity 69
 {
 "classname" "path_corner"
 "origin" "888 552 24"
@@ -6400,55 +6395,95 @@
 "targetname" "path2"
 "target" "path3"
 }
-// entity 71
+// entity 70
 {
 "classname" "path_corner"
-"origin" "752 404.686 24"
-"angle" "225"
+"origin" "691.314 419.314 24"
+"angle" "180"
 "targetname" "path3"
 "target" "path4"
 }
-// entity 72
+// entity 71
 {
 "classname" "path_corner"
-"origin" "632 408 24"
+"origin" "440 408 24"
 "angle" "180"
 "targetname" "path4"
 "target" "path5"
 }
-// entity 73
+// entity 72
 {
 "classname" "path_corner"
-"origin" "565.072 514.928 24"
+"origin" "197.072 386.928 24"
 "angle" "120"
 "targetname" "path5"
 "target" "path6"
 }
-// entity 74
+// entity 73
 {
 "classname" "monster_dog"
 "origin" "480 544 40"
 "angle" "165"
 "target" "dog"
 }
-// entity 75
+// entity 74
 {
 "classname" "path_corner"
-"origin" "344 552 24"
-"angle" "180"
-"target" ""
+"origin" "120 552 24"
+"angle" "0"
+"target" "path2"
 "targetname" "path6"
+}
+// entity 75
+{
+"classname" "trigger_once"
+"targetname" ""
+"target" "dog"
+"delay" "2"
+// brush 0
+{
+( 1040 304 16 ) ( 1040 305 16 ) ( 1040 304 17 ) trigger [ 0 -1 0 0 ] [ 0 0 -1 16 ] 0 1 1
+( 1120 256 16 ) ( 1120 256 17 ) ( 1121 256 16 ) trigger [ 1 0 0 -16 ] [ 0 0 -1 16 ] 0 1 1
+( 1120 304 16 ) ( 1121 304 16 ) ( 1120 305 16 ) trigger [ -1 0 0 16 ] [ 0 -1 0 0 ] 0 1 1
+( 1168 368 48 ) ( 1168 369 48 ) ( 1169 368 48 ) trigger [ 1 0 0 -16 ] [ 0 -1 0 0 ] 0 1 1
+( 1168 400 32 ) ( 1169 400 32 ) ( 1168 400 33 ) trigger [ -1 0 0 16 ] [ 0 0 -1 16 ] 0 1 1
+( 1152 368 32 ) ( 1152 368 33 ) ( 1152 369 32 ) trigger [ 0 1 0 0 ] [ 0 0 -1 16 ] 0 1 1
+}
 }
 // entity 76
 {
+"classname" "monster_dog"
+"origin" "1008 528 40"
+"angle" "195"
+"targetname" "dog"
+}
+// entity 77
+{
 "classname" "trigger_once"
+"target" "demon"
+"delay" "1"
 // brush 0
 {
-( 1056 304 16 ) ( 1056 305 16 ) ( 1056 304 17 ) trigger [ 0 -1 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1104 240 16 ) ( 1104 240 17 ) ( 1105 240 16 ) trigger [ 1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1104 304 16 ) ( 1105 304 16 ) ( 1104 305 16 ) trigger [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 1152 368 48 ) ( 1152 369 48 ) ( 1153 368 48 ) trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 1152 384 32 ) ( 1153 384 32 ) ( 1152 384 33 ) trigger [ -1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1152 368 32 ) ( 1152 368 33 ) ( 1152 369 32 ) trigger [ 0 1 0 0 ] [ 0 0 -1 80 ] 0 1 1
+( 16 384 -320 ) ( 16 384 -319 ) ( 16 383 -320 ) trigger [ -1.8369701987210297e-16 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 48 448 656 ) ( 48 448 657 ) ( 49 448 656 ) trigger [ 1 -1.8369701987210297e-16 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( -48 384 272 ) ( -48 383 272 ) ( -47 384 272 ) trigger [ 1.8369701987210297e-16 1 0 0 ] [ -1 1.8369701987210297e-16 0 0 ] 270 1 1
+( 48 336 320 ) ( 49 336 320 ) ( 48 335 320 ) trigger [ -1.8369701987210297e-16 -1 0 0 ] [ -1 1.8369701987210297e-16 0 0 ] 90 1 1
+( -48 464 -320 ) ( -47 464 -320 ) ( -48 464 -319 ) trigger [ -1 1.8369701987210297e-16 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 128 336 656 ) ( 128 335 656 ) ( 128 336 657 ) trigger [ 1.8369701987210297e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 78
+{
+"classname" "trigger_once"
+"targetname" "demon"
+"killtarget" "1"
+// brush 0
+{
+( 1088 384 -320 ) ( 1088 384 -319 ) ( 1088 383 -320 ) trigger [ -1.8369701987210297e-16 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+( 1120 448 656 ) ( 1120 448 657 ) ( 1121 448 656 ) trigger [ 1 -1.8369701987210297e-16 0 -48 ] [ 0 0 -1 0 ] 0 1 1
+( 1024 384 272 ) ( 1024 383 272 ) ( 1025 384 272 ) trigger [ 1.8369701987210297e-16 1 0 0 ] [ -1 1.8369701987210297e-16 0 48 ] 270 1 1
+( 1120 336 320 ) ( 1121 336 320 ) ( 1120 335 320 ) trigger [ -1.8369701987210297e-16 -1 0 0 ] [ -1 1.8369701987210297e-16 0 48 ] 90 1 1
+( 1024 464 -320 ) ( 1025 464 -320 ) ( 1024 464 -319 ) trigger [ -1 1.8369701987210297e-16 0 48 ] [ 0 0 -1 0 ] 0 1 1
+( 1200 336 656 ) ( 1200 335 656 ) ( 1200 336 657 ) trigger [ 1.8369701987210297e-16 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
 }
 }

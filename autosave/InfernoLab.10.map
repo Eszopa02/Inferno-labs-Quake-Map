@@ -2154,15 +2154,6 @@
 ( 880 336 -480 ) ( 881 336 -480 ) ( 880 336 -479 ) 128_cyan_3 [ -1 1.8369701987210297e-16 0 -80 ] [ 0 0 -1 96 ] 0 1 1
 ( 1008 144 496 ) ( 1008 143 496 ) ( 1008 144 497 ) 128_cyan_3 [ 1.8369701987210297e-16 1 0 16 ] [ 0 0 -1 96 ] 0 1 1
 }
-// brush 233
-{
-( 1056 304 16 ) ( 1056 305 16 ) ( 1056 304 17 ) trigger [ 0 -1 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1104 240 16 ) ( 1104 240 17 ) ( 1105 240 16 ) trigger [ 1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1104 304 16 ) ( 1105 304 16 ) ( 1104 305 16 ) trigger [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 1152 368 48 ) ( 1152 369 48 ) ( 1153 368 48 ) trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
-( 1152 384 32 ) ( 1153 384 32 ) ( 1152 384 33 ) trigger [ -1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
-( 1152 368 32 ) ( 1152 368 33 ) ( 1152 369 32 ) trigger [ 0 1 0 0 ] [ 0 0 -1 80 ] 0 1 1
-}
 }
 // entity 1
 {
@@ -6377,5 +6368,87 @@
 ( 1200 304 192 ) ( 1200 305 192 ) ( 1201 304 192 ) 128_grey_3 [ 1 0 0 -16 ] [ 0 -1 0 0 ] 0 1 1
 ( 1200 304 560 ) ( 1201 304 560 ) ( 1200 304 561 ) 128_grey_3 [ -1 0 0 16 ] [ 0 0 -1 0 ] 0 1 1
 ( 1200 304 560 ) ( 1200 304 561 ) ( 1200 305 560 ) 128_grey_3 [ 0 1 0 0 ] [ 0 0 -1 0 ] 0 1 1
+}
+}
+// entity 67
+{
+"classname" "monster_dog"
+"origin" "1136 528 40"
+"angle" "195"
+"targetname" "dog"
+}
+// entity 68
+{
+"classname" "monster_dog"
+"origin" "976 544 40"
+"angle" "165"
+"targetname" "dog"
+}
+// entity 69
+{
+"classname" "path_corner"
+"origin" "1080 552 24"
+"angle" "180"
+"targetname" "path1"
+"target" "path2"
+}
+// entity 70
+{
+"classname" "path_corner"
+"origin" "888 552 24"
+"angle" "180"
+"targetname" "path2"
+"target" "path3"
+}
+// entity 71
+{
+"classname" "path_corner"
+"origin" "752 404.686 24"
+"angle" "225"
+"targetname" "path3"
+"target" "path4"
+}
+// entity 72
+{
+"classname" "path_corner"
+"origin" "632 408 24"
+"angle" "180"
+"targetname" "path4"
+"target" "path5"
+}
+// entity 73
+{
+"classname" "path_corner"
+"origin" "565.072 514.928 24"
+"angle" "120"
+"targetname" "path5"
+"target" "path6"
+}
+// entity 74
+{
+"classname" "monster_dog"
+"origin" "480 544 40"
+"angle" "165"
+"target" "dog"
+}
+// entity 75
+{
+"classname" "path_corner"
+"origin" "344 552 24"
+"angle" "180"
+"target" ""
+"targetname" "path6"
+}
+// entity 76
+{
+"classname" "trigger_once"
+// brush 0
+{
+( 1056 304 16 ) ( 1056 305 16 ) ( 1056 304 17 ) trigger [ 0 -1 0 0 ] [ 0 0 -1 80 ] 0 1 1
+( 1104 240 16 ) ( 1104 240 17 ) ( 1105 240 16 ) trigger [ 1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
+( 1104 304 16 ) ( 1105 304 16 ) ( 1104 305 16 ) trigger [ -1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 1152 368 48 ) ( 1152 369 48 ) ( 1153 368 48 ) trigger [ 1 0 0 0 ] [ 0 -1 0 0 ] 0 1 1
+( 1152 384 32 ) ( 1153 384 32 ) ( 1152 384 33 ) trigger [ -1 0 0 0 ] [ 0 0 -1 80 ] 0 1 1
+( 1152 368 32 ) ( 1152 368 33 ) ( 1152 369 32 ) trigger [ 0 1 0 0 ] [ 0 0 -1 80 ] 0 1 1
 }
 }

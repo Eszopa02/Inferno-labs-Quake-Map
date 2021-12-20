@@ -4,7 +4,7 @@
 {
 "mapversion" "220"
 "classname" "worldspawn"
-"wad" "C:/QuakeDev/wads/prototype_1_3.wad;C:/Users/Sylwia/Desktop/QuakeDev/wads/prototype_1_3.wad"
+"wad" "C:/QuakeDev/wads/prototype_1_3.wad;C:/Users/Sylwia/Desktop/QuakeDev/wads/prototype_1_3.wad;C:/Users/Sylwia/Documents/GitHub/QuakeSingleplayerMap/Submarine.wad"
 // brush 0
 {
 ( 16 16 -16 ) ( 16 17 -16 ) ( 16 16 -15 ) 128_grey_2 [ 0 -1 0 0 ] [ 0 0 -1 0 ] 0 1 1
